@@ -27,6 +27,9 @@ var sequelize = new Sequelize('database', 'username', 'password', {
   // - currently supported: 'mysql', 'sqlite', 'postgres'
   dialect: 'mysql',
 
+  // if specified, load the dialect library from this path...
+  dialectModulePath: null,
+
   // the storage engine for sqlite
   // - default ':memory:'
   storage: 'path/to/database.sqlite',
